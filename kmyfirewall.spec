@@ -2,7 +2,7 @@ Summary:	Frontend for iptables
 Summary(pl):	Frontend dla iptables
 Name:		kmyfirewall
 Version:	0.9.6.2
-Release:	1.1
+Release:	1.2
 License:	GPL
 Group:		X11/Applications/Networking
 Source0:	http://dl.sourceforge.net/kmyfirewall/%{name}-%{version}.tar.bz2
@@ -26,6 +26,7 @@ iptables.
 %setup -q
 
 %build
+cp -f /usr/share/automake/config.sub .
 %configure
 %{__make}
 
