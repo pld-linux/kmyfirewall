@@ -1,12 +1,11 @@
-Summary:	Frontend for IPTables
-Summary(pl):	Frontend dla IPTables
+Summary:	Frontend for iptables
+Summary(pl):	Frontend dla iptables
 Name:		kmyfirewall
 Version:	0.9.6.2
 Release:	1
 License:	GPL
-group:		X11/Applications/Networking
-######		Unknown group!
-Source0:	http://aleron.dl.sourceforge.net/sourceforge/%{name}/%{name}-%{version}.tar.bz2
+Group:		X11/Applications/Networking
+Source0:	http://dl.sourceforge.net/sourceforge/%{name}/%{name}-%{version}.tar.bz2
 # Source0-md5:	6237add44c0fe8af1f725a2e259ddba3
 URL:		http://kmyfirewall.sourceforge.net/
 BuildRequires:	arts-qt-devel
@@ -16,12 +15,12 @@ BuildRequires:	rpmbuild(macros) >= 1.129
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-KMyFirewall attempts to make it easier to setup IPTables based
+KMyFirewall attempts to make it easier to setup iptables based
 firewalls on Linux systems.
 
 %description -l pl
-KMyFirewall u³atwia konfiguracje firewall-i opartych na Linux-ie i
-IPTables.
+KMyFirewall u³atwia konfiguracjê firewalli opartych na Linuksie i
+iptables.
 
 %prep
 %setup -q
