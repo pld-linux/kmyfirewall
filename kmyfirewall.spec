@@ -10,6 +10,7 @@ Source0:	http://dl.sourceforge.net/kmyfirewall/%{name}-%{version}.tar.bz2
 URL:		http://kmyfirewall.sourceforge.net/
 BuildRequires:	arts-qt-devel
 BuildRequires:	artsc-devel
+BuildRequires:	automake
 BuildRequires:	kdelibs-devel >= 9:3.0
 BuildRequires:	rpmbuild(macros) >= 1.129
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
