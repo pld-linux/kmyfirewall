@@ -59,7 +59,6 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/*
 %attr(755,root,root) %{_libdir}/lib*.so.*.*.*
 %{_libdir}/lib*.la
-%{_desktopdir}/*
 %{_datadir}/apps/*
 %{_datadir}/config/kmyfirewallrc
 %{_desktopdir}/kde/*
