@@ -5,7 +5,7 @@ Version:	0.9.6.2
 Release:	1
 License:	GPL
 Group:		X11/Applications/Networking
-Source0:	http://dl.sourceforge.net/sourceforge/%{name}/%{name}-%{version}.tar.bz2
+Source0:	http://dl.sourceforge.net/kmyfirewall/%{name}-%{version}.tar.bz2
 # Source0-md5:	6237add44c0fe8af1f725a2e259ddba3
 URL:		http://kmyfirewall.sourceforge.net/
 BuildRequires:	arts-qt-devel
@@ -55,11 +55,11 @@ rm -rf $RPM_BUILD_ROOT
 %files -f %{name}.lang
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/*
+%attr(755,root,root) %{_libdir}/lib*.so.*.*.*
+%{_libdir}/lib*.la
 %{_desktopdir}/*
 %{_datadir}/apps/*
 %{_datadir}/config/kmyfirewallrc
-%attr(755,root,root) %{_libdir}/lib*.so.*.*.*
-%{_libdir}/lib*.la
 %{_desktopdir}/kde/*
 %{_iconsdir}/*/*/*/*
 %{_datadir}/mimelnk/application/kmfrs.desktop
