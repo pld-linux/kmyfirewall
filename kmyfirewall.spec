@@ -2,7 +2,7 @@ Summary:	Frontend for iptables
 Summary(pl):	Frontend dla iptables
 Name:		kmyfirewall
 Version:	0.9.6.2
-Release:	1
+Release:	1.1
 License:	GPL
 Group:		X11/Applications/Networking
 Source0:	http://dl.sourceforge.net/kmyfirewall/%{name}-%{version}.tar.bz2
@@ -27,7 +27,6 @@ iptables.
 
 %build
 %configure
-
 %{__make}
 
 %install
@@ -51,6 +50,9 @@ echo "Categories=Qt;KDE;System;" >> \
 
 %clean
 rm -rf $RPM_BUILD_ROOT
+
+%post   -p /sbin/ldconfig
+%postun -p /sbin/ldconfig
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
