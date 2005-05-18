@@ -1,0 +1,28 @@
+--- kmyfirewall-0.9.6.2/kmyfirewall/kmfrs.desktop~	2005-05-18 09:45:24.000000000 +0200
++++ kmyfirewall-0.9.6.2/kmyfirewall/kmfrs.desktop	2005-05-18 09:45:24.000000000 +0200
+@@ -9,6 +9,7 @@
+ Comment[ca]=Estableix les regles amb KMyFirewall
+ Comment[da]=KMyFirewall regelsæt
+ Comment[fr]=Ensemble de règles de KMyFirewall
++Comment[pl]=Zastaw regół KMyFirewalla
+ Comment[pt]=Conjunto de Regras do KMyFirewall
+ Comment[pt_BR]=Conjunto de Regras do KMyFirewall
+ Comment[sv]=Regeluppsättning för Min brandvägg
+--- kmyfirewall-0.9.6.2/kmyfirewall/kmyfirewall.desktop~	2005-05-18 09:46:45.000000000 +0200
++++ kmyfirewall-0.9.6.2/kmyfirewall/kmyfirewall.desktop	2005-05-18 09:46:45.000000000 +0200
+@@ -9,11 +9,14 @@
+ Comment[ca]=Eina de configuració per a un tallafocs
+ Comment[da]=Firewall indstillingsværktøj
+ Comment[fr]=Outil de configuration d'un mur de feu (Firewall)
++Comment[pl]=Narzędzie do konfiguracji zapory sieciowej
+ Comment[pt]=Ferramenta de Configuração de 'Firewalls'
+ Comment[pt_BR]=Ferramenta de  Configuração de Firewall
+ Comment[sv]=Inställningsverktyg för brandvägg
+ Comment[xx]=xxFirewall Configuration Toolxx
+-Terminal=0
++Terminal=false
++Encoding=UTF-8
++Categories=Qt;KDE;System;
+ Name=KMyFirewall
+ Name[sv]=Min brandvägg
+ Name[xx]=xxKMyFirewallxx
