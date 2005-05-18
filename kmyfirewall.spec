@@ -2,11 +2,12 @@ Summary:	Frontend for iptables
 Summary(pl):	Frontend dla iptables
 Name:		kmyfirewall
 Version:	0.9.6.2
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Applications/Networking
 Source0:	http://dl.sourceforge.net/kmyfirewall/%{name}-%{version}.tar.bz2
 # Source0-md5:	6237add44c0fe8af1f725a2e259ddba3
+Patch0:		%{name}-desktop.patch
 URL:		http://kmyfirewall.sourceforge.net/
 BuildRequires:	arts-qt-devel
 BuildRequires:	artsc-devel
@@ -25,6 +26,7 @@ iptables.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 cp -f /usr/share/automake/config.sub admin
@@ -43,10 +45,6 @@ install -d $RPM_BUILD_ROOT%{_desktopdir}/kde
 # FIXME (desktop file name)
 mv $RPM_BUILD_ROOT%{_datadir}/applnk/System/kmyfirewall.desktop \
 	$RPM_BUILD_ROOT%{_desktopdir}/kde
-
-# FIXME (category)
-echo "Categories=Qt;KDE;System;" >> \
-	$RPM_BUILD_ROOT%{_desktopdir}/kde/kmyfirewall.desktop
 
 %find_lang %{name} --with-kde
 
