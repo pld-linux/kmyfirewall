@@ -1,12 +1,12 @@
 Summary:	Frontend for iptables
 Summary(pl):	Frontend dla iptables
 Name:		kmyfirewall
-Version:	0.9.6.2
-Release:	3
+Version:	1.0
+Release:	1
 License:	GPL
 Group:		X11/Applications/Networking
 Source0:	http://dl.sourceforge.net/kmyfirewall/%{name}-%{version}.tar.bz2
-# Source0-md5:	6237add44c0fe8af1f725a2e259ddba3
+# Source0-md5:	e28ca900d8d956e32f61e787ad1ede49
 Patch0:		%{name}-desktop.patch
 URL:		http://kmyfirewall.sourceforge.net/
 BuildRequires:	arts-qt-devel
@@ -42,10 +42,6 @@ rm -rf $RPM_BUILD_ROOT
 
 install -d $RPM_BUILD_ROOT%{_desktopdir}/kde
 
-# FIXME (desktop file name)
-mv $RPM_BUILD_ROOT%{_datadir}/applnk/System/kmyfirewall.desktop \
-	$RPM_BUILD_ROOT%{_desktopdir}/kde
-
 %find_lang %{name} --with-kde
 
 %clean
@@ -59,8 +55,12 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/*
 %attr(755,root,root) %{_libdir}/lib*.so.*.*.*
 %{_libdir}/lib*.la
+%attr(755,root,root) %{_libdir}/kde3/lib*.so
+%{_libdir}/kde3/lib*.la
 %{_datadir}/apps/*
 %{_datadir}/config/kmyfirewallrc
 %{_desktopdir}/kde/*
 %{_iconsdir}/*/*/*/*
 %{_datadir}/mimelnk/application/kmfrs.desktop
+%{_datadir}/servicetypes/*.desktop
+%{_datadir}/services/*.desktop
