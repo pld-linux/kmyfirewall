@@ -1,28 +1,28 @@
---- kmyfirewall-0.9.6.2/kmyfirewall/kmfrs.desktop~	2005-05-18 09:45:24.000000000 +0200
-+++ kmyfirewall-0.9.6.2/kmyfirewall/kmfrs.desktop	2005-05-18 09:45:24.000000000 +0200
-@@ -9,6 +9,7 @@
- Comment[ca]=Estableix les regles amb KMyFirewall
- Comment[da]=KMyFirewall regelsæt
- Comment[fr]=Ensemble de règles de KMyFirewall
-+Comment[pl]=Zastaw regół KMyFirewalla
+--- kmyfirewall-1.0/kmyfirewall/kmyfirewall.desktop.orig	2005-12-10 21:25:04.000000000 +0100
++++ kmyfirewall-1.0/kmyfirewall/kmyfirewall.desktop	2006-01-08 19:03:13.000000000 +0100
+@@ -1,6 +1,7 @@
+ # KDE Config File
+ [Desktop Entry]
+ Encoding=UTF-8
++Terminal=false
+ Type=Application
+ MimeType=application/x-kmyfirewall;application/x-kmfrs;application/x-kmfgrs
+ Icon=kmyfirewall
+@@ -21,6 +22,7 @@
+ Comment[hu]=KMyFirewall szabálycsoport
+ Comment[it]=Insieme di regole per KMyFirewall
+ Comment[nl]=KMyFirewall-filterregels
++Comment[pl]=Narzędzie do konfiguracji zapory sieciowej
  Comment[pt]=Conjunto de Regras do KMyFirewall
  Comment[pt_BR]=Conjunto de Regras do KMyFirewall
- Comment[sv]=Regeluppsättning för Min brandvägg
---- kmyfirewall-0.9.6.2/kmyfirewall/kmyfirewall.desktop~	2005-05-18 09:46:45.000000000 +0200
-+++ kmyfirewall-0.9.6.2/kmyfirewall/kmyfirewall.desktop	2005-05-18 09:46:45.000000000 +0200
-@@ -9,11 +9,14 @@
- Comment[ca]=Eina de configuració per a un tallafocs
- Comment[da]=Firewall indstillingsværktøj
- Comment[fr]=Outil de configuration d'un mur de feu (Firewall)
-+Comment[pl]=Narzędzie do konfiguracji zapory sieciowej
- Comment[pt]=Ferramenta de Configuração de 'Firewalls'
- Comment[pt_BR]=Ferramenta de  Configuração de Firewall
- Comment[sv]=Inställningsverktyg för brandvägg
- Comment[xx]=xxFirewall Configuration Toolxx
--Terminal=0
-+Terminal=false
-+Encoding=UTF-8
-+Categories=Qt;KDE;System;
- Name=KMyFirewall
- Name[sv]=Min brandvägg
- Name[xx]=xxKMyFirewallxx
+ Comment[ru]=Набор правил KMyFirewall
+--- kmyfirewall-1.0/kmyfirewall/kmfrs.desktop.orig  2005-12-10 21:25:04.000000000 +0100
++++ kmyfirewall-1.0/kmyfirewall/kmfrs.desktop       2006-01-08 19:04:22.000000000 +0100
+@@ -21,6 +21,7 @@
+ Comment[hu]=KMyFirewall szabálycsoport
+ Comment[it]=Insieme di regole per KMyFirewall
+ Comment[nl]=KMyFirewall-filterregels
++Comment[pl]=Zastaw regó� KMyFirewalla
+ Comment[pt]=Conjunto de Regras do KMyFirewall
+ Comment[pt_BR]=Conjunto de Regras do KMyFirewall
+ Comment[ru]=�або� п�авил KMyFirewall
