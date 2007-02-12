@@ -1,5 +1,5 @@
 Summary:	Frontend for iptables
-Summary(pl):	Frontend dla iptables
+Summary(pl.UTF-8):   Frontend dla iptables
 Name:		kmyfirewall
 Version:	1.0
 Release:	1
@@ -20,8 +20,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 KMyFirewall attempts to make it easier to setup iptables based
 firewalls on Linux systems.
 
-%description -l pl
-KMyFirewall u³atwia konfiguracjê firewalli opartych na Linuksie i
+%description -l pl.UTF-8
+KMyFirewall uÅ‚atwia konfiguracjÄ™ firewalli opartych na Linuksie i
 iptables.
 
 %prep
