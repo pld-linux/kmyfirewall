@@ -1,5 +1,5 @@
 Summary:	Frontend for iptables
-Summary(pl.UTF-8):   Frontend dla iptables
+Summary(pl.UTF-8):	Frontend dla iptables
 Name:		kmyfirewall
 Version:	1.0
 Release:	1
