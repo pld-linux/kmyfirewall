@@ -57,7 +57,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/lib*.la
 %attr(755,root,root) %{_libdir}/kde3/lib*.so
 %{_libdir}/kde3/lib*.la
-%{_datadir}/apps/*
+%{_datadir}/apps/* # specify excplicit dirs here (to avoid packaging kde dirs)
 %{_datadir}/config/kmyfirewallrc
 %{_desktopdir}/kde/*
 %{_iconsdir}/*/*/*/*
