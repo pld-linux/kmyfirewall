@@ -1,12 +1,12 @@
 Summary:	Frontend for iptables
 Summary(pl.UTF-8):	Frontend dla iptables
 Name:		kmyfirewall
-Version:	1.0
+Version:	1.1.1
 Release:	1
 License:	GPL
 Group:		X11/Applications/Networking
 Source0:	http://dl.sourceforge.net/kmyfirewall/%{name}-%{version}.tar.bz2
-# Source0-md5:	e28ca900d8d956e32f61e787ad1ede49
+# Source0-md5:	707afe4bb8724148986fd80485f0da03
 Patch0:		%{name}-desktop.patch
 URL:		http://kmyfirewall.sourceforge.net/
 BuildRequires:	arts-qt-devel
